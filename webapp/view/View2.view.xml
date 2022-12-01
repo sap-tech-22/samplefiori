@@ -1,0 +1,22 @@
+<mvc:View controllerName="sampleproj.controller.View2"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page2" title="{i18n>title}">
+        <content>
+        <!-- <List id="ShortProductList1" headerText="Customers" items="{
+			path: '/Customers'}">
+            <items>
+                <StandardListItem id="listitem1" title="{CustomerID}" description="{CompanyName}" 
+                icon="sap-icon://account" type="Navigation" press="fnPress" detailPress="fnPress"/>
+            </items>
+        </List> -->
+        <List id="ShortProductList1" headerText="Customers" items="{
+			path: 'MyOrderList>/'}">
+            <items>
+                <StandardListItem id="listitem1" title="{MyOrderList>OrderID}" description="{MyOrderList>ShipName}" 
+                icon="sap-icon://account" type="Navigation" press="fnPress" detailPress="fnPress"/>
+            </items>
+        </List>
+        </content>
+    </Page>
+</mvc:View>

@@ -1,0 +1,14 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="sampleproj.controller.View1" displayBlock="true">
+    <Page id="page" title="{i18n>title}">
+        <content>
+        <List id="ShortProductList" headerText="Employees" items="{    path: '/Employees'}">
+            <items>
+                <StandardListItem id="listitem" title="{EmployeeID}" description="{FirstName}" icon="sap-icon://account" type="Navigation" press="fnPress" detailPress="fnPress"/>
+            </items>
+        </List>
+        </content>
+    <headerContent>
+        <Button xmlns="sap.m" id="button0" activeIcon="sap-icon://feeder-arrow" text="Next" press="btnClick" />
+    </headerContent>
+    </Page>
+</mvc:View>
