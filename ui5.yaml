@@ -19,6 +19,9 @@ server:
           - path: /Northwind
             url: https://services.odata.org
             destination: Tile-Test
+          - path: /sap
+            url: http://s4hana1809.bas:80
+            destination: S4H_1809
     - name: fiori-tools-appreload
       afterMiddleware: compression
       configuration:

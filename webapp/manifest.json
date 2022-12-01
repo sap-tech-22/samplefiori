@@ -24,6 +24,15 @@
                     "localUri": "localService/metadata.xml",
                     "odataVersion": "2.0"
                 }
+            },
+            "addService": {
+                "uri": "/sap/opu/odata/SAP/ZTEST_ODATA1_SRV/",
+                "type": "OData",
+                "settings": {
+                    "annotations": [],
+                    "localUri": "localService/metadata.xml",
+                    "odataVersion": "2.0"
+                }
             }
         },
         "crossNavigation": {
@@ -91,6 +100,11 @@
             },
             "": {
                 "dataSource": "mainService",
+                "preload": true,
+                "settings": {}
+            },
+            "addModel": {
+                "dataSource": "addService",
                 "preload": true,
                 "settings": {}
             }
